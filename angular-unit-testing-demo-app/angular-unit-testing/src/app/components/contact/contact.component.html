@@ -1,0 +1,15 @@
+<form class="example-form" id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" formControlName="name">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Email" formControlName="email">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Text</mat-label>
+    <textarea matInput placeholder="Text" formControlName="text"></textarea>
+  </mat-form-field>
+  <button mat-raised-button type="submit">Save</button>
+</form>
